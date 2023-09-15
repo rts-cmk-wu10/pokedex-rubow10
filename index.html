@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PokeDex</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="spinner"></div>
+
+	<script>
+		const SPINNER = document.querySelector(".spinner")
+		SPINNER.style.display = "block"
+	</script>
+
+<h1>PokeDex</h1>
+
+	<div class="container">
+		<section>
+			
+			<p>Choose your Pokemon!!</p>
+			<ul class="pokeList"></ul>
+			<a href="" class="prevPage">Forrige</a> | <a href="" class="nextPage">Næste</a>
+		</section>
+	</div>
+	
+	<form action="pokemon.html" autocomplete="off">
+		<label>
+			Søg
+			<input type="search" name="name" list="pokemons" class="pokemon__search">
+			<datalist id="pokemons"></datalist>
+		</label>
+		<button type="submit">Søg</button>
+	</form>
+
+	<div class="picture">
+			<img src="photo.jpg" alt="">
+	</div>
+	
+	
+	
+
+	<script src="/app.js" defer></script>
+</body>
+
+</html>
